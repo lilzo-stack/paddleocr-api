@@ -3,3 +3,4 @@ uvicorn
 paddleocr
 paddlepaddle==2.6.2
 python-multipart
+setuptools
