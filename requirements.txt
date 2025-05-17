@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+paddleocr
+paddlepaddle==2.5.1.post101 -f https://paddlepaddle.org.cn/whl/linux/cpu.html
+python-multipart
