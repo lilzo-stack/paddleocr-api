@@ -1,13 +1,19 @@
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
 from paddleocr import PaddleOCR
+<<<<<<< HEAD
 import uvicorn
+=======
+>>>>>>> 2db9152 (Fix: Added setuptools to prevent PaddleOCR import failure)
 import shutil
 import os
 
 app = FastAPI()
+<<<<<<< HEAD
 
 # ✅ Correct and only initialization — CPU only
+=======
+>>>>>>> 2db9152 (Fix: Added setuptools to prevent PaddleOCR import failure)
 ocr = PaddleOCR(use_angle_cls=True, lang='en', use_gpu=False)
 
 UPLOAD_DIR = "uploads"
