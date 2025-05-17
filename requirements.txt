@@ -1,5 +1,5 @@
 fastapi
 uvicorn
 paddleocr
-paddlepaddle==2.5.1.post101 -f https://paddlepaddle.org.cn/whl/linux/cpu.html
+paddlepaddle==2.6.2
 python-multipart
