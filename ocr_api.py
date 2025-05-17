@@ -1,12 +1,14 @@
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
-ocr = PaddleOCR(use_angle_cls=True, lang='en', use_gpu=False)
+from paddleocr import PaddleOCR
 import uvicorn
 import shutil
 import os
 
 app = FastAPI()
-ocr = PaddleOCR(use_angle_cls=True, lang='en')
+
+# ✅ Correct and only initialization — CPU only
+ocr = PaddleOCR(use_angle_cls=True, lang='en', use_gpu=False)
 
 UPLOAD_DIR = "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
